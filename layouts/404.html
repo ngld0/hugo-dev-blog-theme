@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="post" >
+    <div style="text-align: center;">
+      <h3 class="post-title" >
+        <!-- <a href="{{ .Permalink }}">{{ .Title  | markdownify }}</a> -->
+        Ewwwwwww, 404 Error!
+      </h3>
+
+    </div>
+
+    <div class="post-content">
+      <div style="text-align: center;">
+        <p>"The happy man is satisfied with his present situation, no matter what it is." <u><i><b>Seneca</b></i></u>  
+          <!-- {{ "The happy man is satisfied with his present situation, no matter what it is." | markdownify }} -->
+        </p>
+        <img src="/images/404.gif" alt="funny GIF" width="100%" >
+  
+
+      </div>
+
+      {{ if .Site.Taxonomies.tags }}
+        <p>
+          {{ "Maybe these following tags will help you find what you're looking for." | markdownify | emojify }}
+        </p>
+        <h2>Tags</h2>
+        <div class="terms">
+          <ul class="terms__list">
+            {{ range .Site.Taxonomies.tags }}
+              <li class="terms__term">
+                <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a
+                ><span class="terms__term-count">{{ .Count }}</span>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+{{ end }}

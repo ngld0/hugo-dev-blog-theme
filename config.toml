@@ -1,0 +1,95 @@
+# baseurl = "https://ngld0.github.io/"
+baseurl = "/"
+languageCode = "en-us"
+theme = "ngld"
+# configuration for pagination of pages, except homepage; default homepage paginate = 1
+paginate = 10
+[params]
+  author = "Nguyen Lam"
+  avatarURL = "images/avt.png"
+  homeSubtitle = ["Wanderer, Dev, Coder"]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "blogs"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 5
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
+  # background for homepage
+  backgroundImage = "images/avt.png"
+  cover = "images/avt.png"
+  # dont show table of content
+  toc = false
+
+
+# define social icons
+
+[params.blogs]
+  folderName = "blogs"
+[params.books]
+  folderName = "books"
+
+# Social icons
+
+[[params.social]]
+  name = "github"
+  url  = "https://github.com/ngld0"
+[[params.social]]
+  name = "leetcode"
+  url  = "https://www.leetcode.com/ngld0"
+[[params.social]]
+  name = "twitter"
+  url  = "https://twitter.com/"
+[[params.social]]
+  name = "linkedin"
+  url  = "https://www.linkedin.com/ngld0"
+[[params.social]]
+  name = "email"
+  url  = "mailto:nguyenld35@gmail.com"
+
+
+[languages]
+  [languages.en]
+    title = "ngld"
+    # subtitle = "blog"
+    keywords = ""
+    copyright = ""
+    menuMore = "More"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      logoText = "ngld"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+
+      [[languages.en.menu.main]]
+        identifier = "Blogs"
+        name = "Blogs"
+        url = "/blogs"
+
+      [[languages.en.menu.main]]
+        identifier = "books"
+        name = "Books"
+        url = "/books"
+
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact"
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags"
