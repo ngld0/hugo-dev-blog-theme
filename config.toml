@@ -17,8 +17,8 @@ paginate = 10
   # Enable to show reading time in minutes for posts
   showReadingTime = false
   # background for homepage
-  backgroundImage = "images/avt.png"
-  cover = "images/avt.png"
+  backgroundImage = "/images/avt.png"
+  cover = "/images/avt.png"
   # dont show table of content
   toc = false
 
@@ -34,16 +34,16 @@ paginate = 10
 
 [[params.social]]
   name = "github"
-  url  = "https://github.com/ngld0"
+  url  = "https://github.com/abc"
 [[params.social]]
   name = "leetcode"
-  url  = "https://www.leetcode.com/ngld0"
+  url  = "https://www.leetcode.com/abc"
 [[params.social]]
   name = "twitter"
   url  = "https://twitter.com/"
 [[params.social]]
   name = "linkedin"
-  url  = "https://www.linkedin.com/ngld0"
+  url  = "https://www.linkedin.com/abc"
 [[params.social]]
   name = "email"
   url  = "mailto:nguyenld35@gmail.com"
